@@ -1,0 +1,53 @@
+
+.button.dark:hover {
+    background: goldenrod;
+    color: rgb(139, 0, 0);
+}
+.container a{
+    color: goldenrod;
+}
+
+.container a:hover{
+    color: darkred;
+}
+
+.form-data{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sect#top .nav {
+    padding: 0;
+}
+section.sect#mid {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+section.sect#mid .container {
+    max-width: 50%;
+}
+
+.form-data {
+    display: flex;
+    justify-content: space-evenly;
+}
+.form-data .eye{
+    border: 0;
+    background: transparent;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+        section.sect#mid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+            min-height: 50vh;
+        }
+    section.sect#mid .container {
+        max-width: 90%;
+    }
+}

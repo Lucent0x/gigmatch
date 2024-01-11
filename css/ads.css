@@ -1,0 +1,60 @@
+
+.box.main-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inp {
+    width: 30vw;
+    margin: 10px;
+}
+#thumbnail{
+    display: none;
+}
+label.button:hover{
+    color: goldenrod
+}
+.crd{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.crd .img img {
+    max-width: 50%;
+}
+
+form .input {
+    width: 100%;
+}
+@media (max-width: 700px) {
+    .box.box.main-box{
+        flex-direction: column;
+       padding: 5px;
+    }
+    .inp{
+        width: 90%;
+    }
+
+    #mid .card{
+        min-width: 95%;
+    }
+    .title{
+        font-size: x-large;
+    }
+}

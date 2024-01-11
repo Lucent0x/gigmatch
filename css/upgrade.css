@@ -1,0 +1,38 @@
+ #mid .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .right .info-row{
+   display: flex;
+   flex-direction: column;
+ }
+ .right{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 90%;
+ }
+
+ .info{
+   min-width: 50vw;
+ }
+
+ @media (max-width:  700px) {
+
+ #mid .bottom{
+  width: 100%;
+ }
+ form{
+  width: 100vw;
+ }
+  .right .info-row{
+    width: 100%;
+  }
+
+    .info-row .info{
+      width: 100%;
+    }
+ }

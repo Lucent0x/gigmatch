@@ -1,0 +1,262 @@
+main{
+    transition-duration: 2s;
+}
+
+.nav .right {
+    width: 75%;
+    margin-top: 20px;
+}
+ul li {
+    border-right: 0;
+    padding-right: 5px;
+}
+#active{
+  color: darkred;
+}
+ul li:last-child{
+    border: none;
+}
+ul li a {
+    color: goldenrod;
+}
+
+ul li a:hover{
+    color: darkred;
+}
+ul li a i{
+    color: darkgoldenrod;
+}
+
+div#profile{
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+div.tag{
+    font-size: larger;
+    color: darkred;
+}
+
+div.pdata{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pdata .icon {
+    font-size: xx-large;
+    background: darkred;
+    color: goldenrod;
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.icon img{
+    border-radius: 50%;
+}
+div#payments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+.parent ul{
+    display: flex;
+    flex-direction: column;
+    border-top: 0;
+    padding: 5px;
+     border-radius: 0px 5px 5px 5px;
+     transition-duration: 2s;
+     background: azure;
+}
+.parent ul li {
+    border-right: 0px ;
+    border-bottom: 2px solid darkred;
+}
+
+.parent ul li:last-child {
+    border-bottom: 0;
+}
+.parent ul li:first-child {
+    border-bottom: 2px solid darkred;
+}
+.parent ul{
+    display: none;
+}
+.parent ul:hover {
+    display: block;
+}
+.box1{
+    width: 40%
+}
+.box1 .balance{
+    font-size: xx-large;
+    text-align: left;
+    min-width: 59%;
+}
+.button.dark:hover {
+    background: goldenrod;
+    color: rgb(139, 0, 0);
+}
+.box1 .card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.box2{
+    width: 55%;
+    max-height: 40vh;
+}
+.box2 table{
+    width: 100%;
+}
+
+#spin {
+    border: 1px solid goldenrod;
+    padding: 20px;
+}
+
+#spin .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#spin .container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#spin .container .spinBtn {
+     position: absolute;
+     width: 59px;
+     height: 59px;
+     background: darkred;
+     border-radius: 50%;
+     z-index: 10;
+     display: flex;
+     color: white;
+     justify-content: center;
+     align-items: center;
+     border: 4px solid darkgrey;
+     user-select: none;
+     cursor: pointer;
+} 
+
+#spin .container .spinBtn::before {
+    content: " ";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -20px;
+    background: linear-gradient(to right top, darkred, darkred, darkred, white, darkred);
+    clip-path: polygon( 50% 0%, 15% 100%, 85% 100% );
+}
+.container .wheel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 12px 5px gold;
+    border: 8px solid darkred;
+    overflow: hidden;
+    transition: transform 5s ease-in-out;
+} 
+.wheel .numberr{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: var(--clr);
+    transform-origin: bottom right;
+    transform: rotate(calc(45deg * var(--i)));
+    clip-path: polygon( 0 0, 55% 0, 100% 100%, 0 57%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    user-select: none;
+    cursor: pointer;
+}
+.wheel .numberr span{
+    position: relative;
+    transform: rotate(45deg);
+    font-size: x-large;
+    font-weight: bolder ;
+}
+
+.wheel .numberr span::after{
+    content : "$";
+    position: absolute;
+    font-size: 0.75em;
+    font-weight: bolder;
+}
+footer ul li {
+    border-right: 0px;
+    padding-right: 0px;
+}
+
+@media (max-width: 700px) {
+    div#profile {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    div#payments {
+        flex-direction: column;
+    }
+    div#payments .box{
+        width: 100%;
+        padding:5px;
+    }
+    #spin {
+        border: 1px solid goldenrod;
+        padding: 10px;
+        max-width: 100%;
+        height: 100%;
+    }
+    #spin .box{
+        max-width: 100%;
+    }
+        #spin .container {
+            width: 250px;
+            height: 250px;
+        }
+        .nav .right {
+            width: 100%;
+            margin-top: -45px;
+        }
+        .menu div{
+            padding: 5px;
+            width: 50px;
+            text-align: center;
+        }
+        
+        .menu div:hover{
+            border: 4px double darkgoldenrod;
+        }
+        ul li{
+            padding: 0;
+        }
+        li.parent ul{
+            text-align: left;
+             border: none;
+        }
+        li.parent ul li{
+            width: 150px;
+            border: none;
+        }
+       li.parent ul li:hover{
+        background: transparent;
+        }
+}

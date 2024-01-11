@@ -1,0 +1,58 @@
+.box1{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box1 .card{
+ display: flex;
+ flex-direction: row;
+ width: 59%;
+ display: flex;
+ justify-content: space-between;
+}
+
+.card .left{
+    width: 59%;
+    height: 90%;
+    display: flex;
+    font-weight: bolder;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left .plus{
+    font-size: large;
+}
+.left .bold{
+    font-size: xx-large;
+    height: 59%;
+    text-align: left;
+    margin-left: 30px;
+}
+.card .right{
+    width: 35%;
+
+}
+
+@media (max-width: 700px) {
+    .box1{
+        padding: 5px;
+    }
+    #mid {
+        padding: 5px;
+    }
+    #mid .card{
+        min-width: 99%;
+    }
+    .card .left{
+        width: 70%;
+    }
+    .card .right{
+        width: 30%;
+    }
+    .links{
+        width: 100%;
+    }
+}

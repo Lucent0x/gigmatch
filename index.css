@@ -1,0 +1,120 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+ font-family: "Poppins";
+}
+
+main{
+ max-width: 100%;
+ min-height: 80vh; 
+}
+.sect#top .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+    align-items: top;
+}
+.nav .left .logo img {
+   max-width: 150px;
+}
+
+.nav .right{
+    width: 15%;
+    margin-top: 20px;
+}
+.right ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    background: rgb(175, 1, 1) ;
+    color: white;
+    font-family: "Poppins";
+    transition-duration: 1s;
+}
+.button.light{
+    background: goldenrod;;
+}
+.button.dark:hover{
+    color: goldenrod;
+}
+.button:hover{
+    color: rgba(139, 0, 0, 0.733) ;
+}
+footer{
+    min-height: 30vh;
+    background: black;
+    padding: 10px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .top {
+    padding-left: 10px;
+    font-size: large;
+    transition-duration: 2s;
+}
+
+footer .top i{
+    margin-right: 10px;
+    color: goldenrod;
+}
+footer ul li a{
+    color: rgba(139, 0, 0, 0.733)
+}
+footer ul li a:hover{
+    color: white;
+}
+
+footer .bottom{
+    border-top: 1px solid goldenrod;
+}
+
+@media (max-width: 700px) {
+    main {
+        max-width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .nav .left .logo img {
+        max-width: 100px;
+    }
+    .sect#top .nav {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 10px 20px 10px 20px; */
+    }
+   .menu{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 5px;
+   }
+   .nav {
+    flex-direction: column;
+   }
+    .right ul{
+        width: 100%;
+        border: 1px solid darkgoldenrod;
+        flex-direction: column;
+        align-items:flex-end;
+        display: none;
+    }
+
+    .right ul li{
+        width: 200px;
+        border: 1px solid darkred;
+        margin: 2px;
+        padding: 5px;
+    }
+        .right ul li:hover{
+            background: azure;
+        }
+}

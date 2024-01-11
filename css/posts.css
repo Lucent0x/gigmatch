@@ -1,0 +1,170 @@
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ .crd{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width:45vw ;
+}
+
+.crd .img img {
+    max-height: 350px;
+    /* mix-blend-mode:darken; */
+}
+
+.taged{
+    width: 100%;
+}
+.img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background: gold; */
+}
+span.tag{
+    color: goldenrod;
+    /* background: darkred */
+}
+.records{
+    border-bottom: 1px solid gray;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    width: 100%;
+}
+.record{
+    display: flex;
+    justify-content: space-between;
+    width: 59%;
+    padding: 0px 0px 0px 20px;
+}
+.comments {
+    max-height: 150px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 1s;
+    justify-content: left;
+    text-align: left;
+}
+.cmt{
+    padding: 0;
+    overflow: hidden;
+    height: 0px;
+    justify-content: left;
+}
+.cmmt{
+    width: 90%;
+}
+.cmmt i {
+    margin-left: 10px;
+}
+#mid .card{
+    justify-content: left;
+}
+.showit {
+    overflow-y: scroll;
+    padding-top: 20px;
+    height: auto;
+}
+.links{
+    font-size: 20px;
+    cursor: pointer;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.links i{
+    padding-left: 10px;
+}
+
+div.interact {
+    transition-duration: 1s;
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+}
+
+.interact i{
+    font-size: 30px;
+}
+.like {
+    width: 25%;
+    padding-left: 20px;
+    margin-right: 10%;
+    color: darkred;
+}
+
+.commentsCount{
+    cursor: pointer;
+}
+
+.commentsCount  :hover{
+    color: darkgoldenrod;
+}
+
+.like i, .comment{
+    color: rgb(7, 114, 163);
+}
+
+.links {
+    color: darkgoldenrod;
+}
+.fa-square-facebook{
+    color: rgb(7, 114, 163);
+}
+.fa-square-whatsapp{
+    color: rgb(31, 155, 31);
+}
+.fa-square-instagram{
+    color: rgb(194, 16, 105);
+}
+.fa-telegram{
+    color:rgb(7, 114, 163); ;
+}
+.commenting{
+    width: 85%;
+    padding: 10px;
+    display: none;
+}
+.commenting form{
+    display: flex;
+    width: 85%;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+form .input{
+    width: 80%;
+}
+
+form button{
+    font-size: x-large;
+}
+.show{
+    display: flex;
+    width: 85%;
+    padding: 10px;
+}
+
+@media (max-width: 700px) {
+    #mid{
+        max-height: none;
+        padding: 5px;
+    }
+    .container{
+        max-height: 100vh;
+        overflow-y: scroll;
+        width: 100%;
+    }
+
+    .box{
+        width: 100%;
+        padding: 5px;
+    }
+}
